@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: hsl(30, 54%, 90%);
+    }
+
+    main{
+      background-color: hsl(0, 0%, 100%);
+      max-width: 700px;
+      margin: 100px 0px;
+      padding: 50px;
+      border-radius: 20px;
+    }
+
+    section:not(:first-of-type):not(:last-of-type) {
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding-bottom: 10px;
+    }
+    
+    section img{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    section h1{
+      color: hsl(24, 5%, 18%);
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    section h2{
+      color: hsl(14, 45%, 36%);
+      margin-left: 15px;
+    }
+
+    section h1, section h2{
+      font-family: "Young Serif", serif;
+    }
+
+    section ul li::marker, section ol li::marker{
+      color: hsl(14, 45%, 36%);
+    }
+
+    section ol{
+      max-width: 600px;
+    }
+
+    section ol li::marker{
+      font-weight: 600;
+    }
+    
+    ul li, ol li{
+      padding-left: 10px;
+    }
+    
+    section p, section li, table tr td{
+      font-family: "Outfit", serif;
+      font-weight: 400;
+      color: hsl(30, 10%, 34%);
+      font-size: 16px;
+    }
+
+    li{
+      margin-bottom: 15px;
+    }
+
+    .description{
+      margin: 30px 0px;
+      max-width: 650px;
+    }
+
+    .timeList{
+      background-color: hsl(330, 100%, 98%);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .timeList p{
+      color: hsl(332, 51%, 32%);
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 15px;
+    }
+
+    .timeList ul li::marker{
+      color: hsl(332, 51%, 32%);
+    }
+
+    .bold{
+      font-weight: 600;
+    }
+
+    section:last-of-type h2{
+      margin-left: 0;
+    }
+
+    table{
+      width: 100%;
+    }
+
+    table td{
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding: 15px;
+    }
+
+    table td.bold{
+      color: hsl(14, 45%, 36%);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 770px) {
+      body{
+        background-color: #fff;
+      }
+      main{
+        margin-top: 0;
+        padding: 0;
+      }
+      .notImg, section:not(:first-of-type){
+        margin: 0px 30px;
+      }
+      .timeList{
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <img src="./assets/images/image-omelette.jpeg" alt="">
+      <div class="notImg">
+        <h1>Simple Omelette Recipe</h1>
+        <p class="description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        <div class="timeList">
+          <p>Preparation time</p>
+          <ul>
+            <li><span class="bold">Total</span>: Approximately 10 minutes</li>
+            <li><span class="bold">Preparation</span>: 5 minutes</li>
+            <li><span class="bold">Cooking</span>: 5 minutes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <li><span class="bold">Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><span class="bold">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><span class="bold">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+        <li><span class="bold">Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><span class="bold">Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><span class="bold">Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <table>
+        <tr>
+          <td>Calories</td>
+          <td class="bold">277kcal</td>
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <td class="bold">0g</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td class="bold">20g</td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td class="bold">22g</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yann Soler</a>.
+  </div>
+</body>
+</html>
